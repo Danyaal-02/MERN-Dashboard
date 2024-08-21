@@ -3,12 +3,10 @@ import { Bar } from "react-chartjs-2";
 import { Chart, PointElement, LineElement, LinearScale } from 'chart.js/auto';
 
 const getRandomLightColor = () => {
-    // Generate random RGB values in the range of 128-255 for brightness
     const r = Math.floor(Math.random() * (255 - 128 + 1)) + 128;
     const g = Math.floor(Math.random() * (255 - 128 + 1)) + 128;
     const b = Math.floor(Math.random() * (255 - 128 + 1)) + 128;
-    // Construct CSS color string with light values
-    return `rgba(${r}, ${g}, ${b}, 0.7)`; // Use alpha for transparency
+    return `rgba(${r}, ${g}, ${b}, 0.7)`;
 }
 
 const BarChart = ({ chartData }) => {
@@ -18,7 +16,7 @@ const BarChart = ({ chartData }) => {
             {
                 label: 'Published',
                 data: Object.values(chartData),
-                backgroundColor: Object.keys(chartData).map(() => getRandomLightColor()), // Generate random light colors
+                backgroundColor: Object.keys(chartData).map(() => getRandomLightColor()),
                 borderWidth: 0,
                 barThickness: 10,
                 borderRadius: 5
