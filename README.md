@@ -2,6 +2,11 @@
 
 This project is a full-stack web application built using the MERN stack, which stands for MongoDB, Express.js, React.js, and Node.js. It includes both the frontend and backend components necessary to run a web application.
 
+## Deployed Application
+
+- Backend: [https://mern-dashboard-backend-six3.onrender.com](https://mern-dashboard-backend-six3.onrender.com)
+- Frontend: [https://master--mern-dashboard-02.netlify.app/](https://master--mern-dashboard-02.netlify.app/)
+
 ## Installation
 
 ### Prerequisites
@@ -15,46 +20,46 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
 
-```
-git clone https://github.com/Danyaal-02/MERN-Dashboard.git
-```
+    ```bash
+    git clone https://github.com/Danyaal-02/MERN-Dashboard.git
+    ```
 
 2. Navigate to the project directory:
 
-```
-cd MERN-Dashboard
-```
+    ```bash
+    cd MERN-Dashboard
+    ```
 
 3. Install dependencies for both the frontend and backend:
 
-```
-cd frontend
-npm install
+    ```bash
+    cd frontend
+    npm install
 
-cd ../backend
-npm install
-```
+    cd ../backend
+    npm install
+    ```
 
 4. Create a `.env` file in the backend directory and add your MongoDB URL and port number:
 
-```
-MONGOURL=<your-mongodb-url>
-PORT=4000
-```
+    ```bash
+    MONGOURL=<your-mongodb-url>
+    PORT=4000
+    ```
 
 5. Database Initialization
 
-Ensure that your MongoDB server is running.
+    Ensure that your MongoDB server is running.
 
-Navigate to the backend folder.
+    Navigate to the backend folder.
 
-Load the reports.json file into the MongoDB database using the mongoimport command:
+    Load the `reports.json` file into the MongoDB database using the `mongoimport` command:
 
+    ```bash
+    mongoimport --db your_database_name --collection reports --file reports.json --jsonArray
+    ```
 
-`mongoimport --db your_database_name --collection reports --file reports.json --jsonArray`
-
-Replace `your_database_name` with the name of your MongoDB database 
-
+    Replace `your_database_name` with the name of your MongoDB database.
 
 ## Usage
 
@@ -62,23 +67,24 @@ Replace `your_database_name` with the name of your MongoDB database
 
 - Start the backend server:
 
-```
-npm start
-```
+    ```bash
+    npm start
+    ```
 
 ### Frontend:
 
 - Navigate to the frontend directory:
 
-```
-cd frontend
-```
+    ```bash
+    cd frontend
+    ```
 
 - Start the frontend development server:
 
-```
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
+
 Open [http://localhost:FRONT_END_PORT](http://localhost:FRONT_END_PORT) to view the frontend in your browser.
 
 ## Contributing
