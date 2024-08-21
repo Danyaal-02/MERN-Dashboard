@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongodb": "^6.8.0",
     "mongoose": "^7.0.3",
     "nodemon": "^2.0.22",
     "router": "^1.3.8"
@@ -24,6 +25,5 @@
     "url": "https://github.com/Danyaal-02/MERN-Dashboard/issues"
   },
   "homepage": "https://github.com/Danyaal-02/MERN-Dashboard#README",
-  "devDependencies": {},
   "keywords": []
 }
