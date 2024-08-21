@@ -1,7 +1,7 @@
-import axios from 'axios'
-import api_url from '../env'
+import axios from 'axios';
 
 export default function getAllReports() {
-    const url = api_url + "/get"
-    return axios.get(url)
+    const api_url = import.meta.env.VITE_API_URL;
+    const url = `${api_url}/get`;
+    return axios.get(url);
 }
